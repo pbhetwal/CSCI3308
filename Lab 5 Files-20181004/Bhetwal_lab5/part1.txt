@@ -1,0 +1,108 @@
+Pari Bhetwal
+
+1) 
+CSS: 
+	#div1{
+		background-color: red;
+	}
+
+2) 
+CSS:
+	div{
+		margin: 20px;
+		padding: 20px;
+	}
+
+Changing the margin allows us to increase or decrease the space between the boxes.
+Changing the padding allows us to increase or decrease the size of the boxes.
+
+3) 
+CSS:
+	#div1 p{
+		background-color: yellow;
+		margin: 101px;
+		padding: 101px;
+	}
+Changing the margin over 100px changes the <p> element such that it is outside of the box. 
+Cahanging the padding over 100px changes the <p> element such that it is in its own yellow box. 
+
+4) 
+CSS: 
+	#div1{
+	overflow: scroll;
+
+	}
+	#div1{
+	overflow: hidden;
+
+	}
+Scroll creates a scrollbar that allows us to scroll through the content within a given box 
+Hidden hides any content within the given box if the content does not fit 
+
+5) 
+CSS:
+	div {
+    float: left; 
+	}
+Float left makes it so that all the boxes are arranged on the left side of the screen and horizontally in the order as follows from left to right: 1 2 3 
+Float right makes it so that all the boxes are arranged on the right side of the screen and horizontally in the order as follows from left to right: 3 2 1 
+
+6) 
+First:
+	#div1{
+	float: left;
+	clear: right;
+	}
+This puts box 1 all the way in the left top left corner and puts box 2 and 3 horizontally together in the order 2, 3 in the top right corner. 
+
+Second: 
+	#div1{
+		float: left;
+		clear: right;
+	}
+	#div2{
+		float: left;
+		clear: right;
+	}
+This puts box 1 and 2 horizontally together in the order 1, 2 in the top left corner and puts box 3 on its own in the top right corner. 
+
+Third: 
+	div1{
+		float: left;
+		clear: right;
+	}
+	#div2{
+		float: left;
+		clear: right;
+	}
+	#div3{
+		float: left;
+		clear: right;
+	}
+This puts box 1, 2, and 3 horizontally together in the top left corner in the order 1, 2, 3 and nothing in the top right corner. (All the boxes are on the left)
+
+7) 
+
+#div1 {
+	float: left;
+    clear: right;
+}
+#div2 {
+ 	float: left;
+  	clear: right;
+}
+#div3 {
+ 	float: left;
+  	clear: left;
+}
+
+These attributes give us the arrangement we want. 
+
+8) 
+CSS:
+	body{
+		margin: 0px;
+	}
+This puts the boxes as close as they can be into the top left corner. 
+Thus, we can infer that the default margin value is only the slightest bit bigger than 0, 
+since before changing it to zero it is not that much farther out from the corner. 

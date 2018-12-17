@@ -1,0 +1,34 @@
+﻿Pari Bhetwal
+Omar Eldar 
+
+Step 4: 																				
+1) mkdir cs3308 
+2) mv cs3308 CSCI3308_104, cd CSCI3308_104
+3) unzip -n Lab\ Materials.zip
+4) Yes. Hidden files start with '.' character, ls -a
+5) fightingRalphie.png is the biggest, ls -alS
+6) mkdir tinyData, ls -alS in images directory, 
+cp CSCI3308_104/Lab\ Materials/images/majesticRalphie.png tinyData, 
+ls -alS in textFiles directory, 
+cp CSCI3308_104/Lab\ Materials/textFiles/aliceinwonderland.txt tinyData, 
+du -ab, tinyData shows 278517 bytes 
+7) zip -9 -r tinyData.zip tinyData, du -ab shows 171869 bytes 
+8) tar -czvf  tinyData.tar tinyData, du -ab shows 174841 bytes 
+9) rm -r tinyData, rm -r tinyData.zip
+10) tar -xf tinyData.tar, -x option means extract contents and -f means read to/from named file 
+11) unzip -n little1.zip, unzip -n little2.zip, little1.zip produces fiona.jpg and aliceinwonderland.txt, 
+while unzip -n little2.zip produces a folder called "little" with both also both these files 
+12) find . -name target.txt, ./emptyFolders/13/target.txt is path from the Lab1 directory, 
+./home/user/CSCI3308_104/Lab Materials/emptyFolders/13/target.txt is full path on my machine 
+13) head -n 206 dracula.txt | tail -n 5 >> MyShortStory.txt (WE DO THIS BECAUSE FIRST FIVE LINES OF FILE AREN'T ACTUALLY OF THE BOOK), 
+head -n 7843 dubliners.txt | tail -n 5 >> MyShortStory.txt (WE DO THIS BECAUSE LAST FIVE LINES OF FILE AREN'T ACTUALLY PART OF THE BOOK) 
+
+Step 5: 
+I started with: sudo cp passwd /home/user/CSCI3308_104/Lab\ Materials/password_demo.txt
+1) sort -t: -k1 password_demo.txt
+2) sort -n -t: -k4 password_demo.txt
+3) grep "system" password_demo.txt
+4) wc -w password_demo.txt, 71 words 
+5) sort -n -u -t: -k3 password_demo.txt
+6) sort -n -u -t: -k3 password_demo.txt > tmp.txt
+7) echo wc -l tmp.txt  > getUniqueGID.sh, chmod +x getUniqueGID.sh, ./getUniqueGID.sh

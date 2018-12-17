@@ -1,0 +1,49 @@
+/*Parikshit Bhetwal*/
+      
+      /* BEGIN STYLING */
+
+      /* CONTAINER AND HEADING 1*/
+      .container
+      {
+        color: white;
+        line-height: 50px;
+      }
+      h1
+      {
+        text-align: center;
+      }
+
+      /* LAYERS STYLING */
+      #first
+      {
+        background-color: red;
+        text-align: center;
+      }
+      #second
+      {
+        background-color: orange;
+        text-align: center;
+      }
+      #third
+      {
+        background-color: black;
+        text-align: center;
+      }
+      #fourth
+      {
+        background-color: green;
+        text-align: center;
+      }
+      #fifth
+      {
+        background-color: blue;
+        text-align: center;
+      }
+      #sixth
+      {
+        background-color: purple;
+        text-align: center;
+      }
+      /* END STYLING */ 
+
+    

@@ -1,0 +1,21 @@
+﻿Parikshit Bhetwal
+
+Q: What are the things needed for Bootstrap to be loaded?
+A: In order for Bootstrap to be loaded, we must first link the Bootstrap cascading style 
+sheet using <link> within the head (<head>) of our code before anything else so we are able to first specify the CSS that we will use. 
+Then, JavaScript is a requirement for these components to work so we need jQuery, Popper.js, 
+and then JavaScript plugins all immediately before the closing </body> tag in our code 
+so that they are enabled. If they are not in this order, they will not be enabled. 
+
+Q: How does Bootstrap’s Grid system work? 
+(Please do not copy and paste the answer from the official website, 
+you are required to explain it in your own words. 
+Feel free to use analogies if it makes things easier!)
+A: A Bootstrap grid system works by using a library of HTML and CSS elements such 
+that developers are able to easily place their website content where they want on 
+their site. We can think of graph paper to understand this. Graph paper has both 
+horizontal and vertical lines such that when they intersect, create squares. 
+We can think of the Bootstrap grid system as the same. The Bootstrap 
+grid system creates rows and columns where we have "squares" that form. 
+Then, we can place the content we want in these "squares". 
+In the Bootstrap grid system, we may have a maximum of 12 columns and unlimited rows. 

@@ -1,0 +1,75 @@
+Pari Bhetwal
+Omar Eldar
+
+Part1: 
+
+Step 1: 
+A) diff scene1_v1.txt scene1_v2.txt shows all the lines that have changed from the two files 
+
+B) "<" at the beginning of a line means the line is from the first file 
+">" at the beginning of a line means the line is from the second file
+
+C) This is the context mode flag that shows you both files in context 
+of the lines that are different, I used diff -c scene1_v1.txt scene1_v2.txt. 
+
+
+Step 2: 
+A) grep -n "pigeon" scene1_v1.txt is the instruction used for this. 
+The -n flag shows line numbers for the match criteria. It is as follows:
+
+32:  ARTHUR:  The pigeon may fly south with the sun or the house martin
+37:  GUARD #1:  What -- a pigeon carrying a cowbell?
+44:  GUARD #1:  Listen, in order to maintain air-speed velocity, a pigeon
+50:  GUARD #2:  It could be carried by an African pigeon!
+51:  GUARD #1:  Oh, yeah, an African pigeon maybe, but not a European
+52:      pigeon, that's my point.
+56:  GUARD #1:  But then of course African pigeons are not migratory.
+61:  GUARD #2:  Wait a minute -- supposing two pigeons carried it together?
+
+B) diff scene1_v1.txt scene1_v2.txt | grep -n "<" shows all the lines that go on to be 
+modified from scene1_v1.txt 
+
+
+Step 3:  
+A) cut -s -d ':' -f1  scene1_v1.txt | sort -k1 | uniq, will show only the unique characters that speak 
+cut -s -d ':' -f1  scene1_v1.txt, will show every single instance this character speaks 
+
+B) diff scene1_v1.txt scene1_v2.txt|cut -s -d ':' -f1 | grep ">", shows names of who's lines changed from scene1_v1.txt
+
+
+Step 4: 
+A) uniq -d scene1_v1.txt, shows only the duplicate lines from scene1_v1.txt 
+
+B) diff scene1_v1.txt scene1_v2.txt|grep ">"|sort -t ':' -k1| cut -d ':' -s -f1| uniq -c, will show times lines were altered 
+
+
+Part 2: 
+
+Step 5: 
+A)1) sed 's/[Aa-Zz]//g' cryptic.txt, removes all letters 
+2) sed 's/[0-9]/_/g' cryptic.txt, removes all numbers, replaces with '_'
+
+B) sed -e 's/a/4/g' -e 's/s/5/g' -e 's/e/3/g' -e 's/t/7/g' -e 's/i/1/g' -e 's/o/0/g' cryptic.txt
+
+
+Step 6: 
+A) egrep '^[0-9]{3}-[0-9]{3}-[0-9]{4}$' regex_practice_data.txt | wc -l, gets the number of phone numbers which is 767
+B) egrep '^303-441-[0-9]{4}$' regex_practice_data.txt | wc -l, gets the number of boulder phone numbers which is 51
+
+
+Step 7:
+A) awk 'NR>1{print $6/$2}' pizzaOrders.txt, shows average cost per pizza for each order 
+B) awk 'NR>1{tp+=$2; nc+=$5} END {print 100*(nc/tp)"%"}' pizzaOrders.txt, shows the percent of all cheese pizzas 
+
+
+
+
+
+
+
+
+
+
+
+
+

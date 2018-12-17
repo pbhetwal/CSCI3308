@@ -1,0 +1,109 @@
+Me: Pari Bhetwal (github: pbhetwal) 
+Partner: Shania Roy (github: shro5435) 
+
+
+1) Went to https://github.com/ and created a username and password and then confirmed email. 
+
+2) Pressed new repository on GitHub and then renamed it to Recitation-3308 and made it public.
+ 
+3) 
+git clone https://github.com/pbhetwal/Recitation-3308
+cd Recitation-3308/
+
+4) 
+echo -e "Pari Bhetwal\nLab4-Git" >> readme.md
+git init 
+git add readme.md 
+git commit readme.md -m "readme commit" 
+
+5) 
+cp /home/user/Downloads/Lab4/Sample1.txt /home/user/Recitation-3308/
+cp /home/user/Downloads/Lab4/Sample2.txt /home/user/Recitation-3308/
+git add Sample1.txt
+git add Sample2.txt
+git commit Sample1.txt -m "S1"
+git commit Sample2.txt -m "S2"
+
+6) git tag v0.0.1
+
+7) 
+git push 
+git push --tags 
+
+8) git checkout -b new-feature
+
+9)
+cp /home/user/Downloads/Lab4/Sample3.txt /home/user/Recitation-3308/
+cp /home/user/Downloads/Lab4/Sample4.txt /home/user/Recitation-3308/
+git add Sample3.txt
+git add Sample4.txt
+git commit Sample3.txt -m "S3"
+git commit Sample4.txt -m "S4"
+
+10) git checkout master 
+
+11) 
+vim Sample1.txt 
+git add Sample1.txt
+git commit Sample1.txt -m "Edited Sample1.txt" 
+
+12) git merge new-feature 
+
+13) git checkout new-feature
+
+14) 
+git push --set-upstream origin new-feature
+git checkout master 
+git push 
+
+15) added shro5435
+
+16) gave permission 
+
+17) 
+git clone https://github.com/shro5435/Recitation-3308
+cd Recitation-3308/ 
+
+18) 
+vim readme.md
+
+19) 
+git add readme.md
+git commit -m "conflict" 
+
+20) git push 
+
+21) cd Recitation-3308/
+
+22) git checkout master 
+
+23) vim readme.md
+
+24) 
+git add readme.md 
+git commit readme.md -m "Conflict" 
+
+25) confirmed with partner 
+
+26) git pull 
+
+27) vim readme.md
+
+28) 
+git add readme.md
+git commit -m "fixed" 
+
+29) 
+From https://github.com/pbhetwal/Recitation-3308
+	3a0b39f..866ef21 master		-> origin/master
+Auto-merging readme.md 
+CONFLICT (content): Merge conflict in readme.md
+Automatic merge failed: fix conflicts then commit the result. 
+
+[master c0ed70d] fixed
+
+30) git push
+
+
+
+

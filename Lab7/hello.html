@@ -1,0 +1,60 @@
+<!--Parikshit Bhetwal-->
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Hello</title>
+	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+	<script>
+		$(document).ready(function() {
+			var url =
+	'https://api.forecast.io/forecast/986cd4fe151a5e51cbe4de15d41fafd5/40.014984,-105.270546'
+		$.ajax({url:url, dataType:"jsonp"}).then(function(data) {
+			console.log(data)
+			$('#Temp').append(data.currently.temperature)
+			$('#aTemp').append(data.currently.apparentTemperature)
+			$('#Smry').append(data.currently.summary)
+		})
+	})
+	</script>
+</head>
+<body>
+	<p>Hello, world.</p>
+
+	<!-- BEGIN TABLE STYLING --> 
+	<style>
+		table 
+		{
+	    	border-collapse: collapse;
+	    	width: 20%;
+		}
+
+		table, th, td 
+		{
+		    border: 1px solid black;
+		}
+	</style>
+	<!-- END TABLE STYLING --> 
+
+	<!-- BEGIN TABLE --> 
+	<table>
+	  <tr>
+	    <th>Stat</th>
+	    <th>Value</th> 
+	  </tr>
+	  <tr>
+	    <td> Temperature </td>
+	    <td id = "Temp"> </td>
+	  </tr>
+	  <tr>
+	    <td>Apparent Temperature</td>
+	    <td id = "aTemp"> </td>
+	  </tr>
+		<!-- THERE WILL NOT ALWAYS BE A PERCIPITATION TYPE. SO MY TA, AJAY, SAID IT IS 
+			 OKAY TO USE SUMMARY--> 
+		<td>Summary</td>
+	    <td id = "Smry"> </td>
+	  </tr>
+	</table>
+	<!-- END TABLE --> 
+</body>
+</html>

@@ -1,0 +1,72 @@
+/*Parikshit Bhetwal*/
+
+
+/*
+PERSONALIZATION
+	Changed the font in body
+	Change the color in body
+	Added rounded corners for the the menu items
+	Changed appearence of links 
+	ADDED A VIDEO TO THE AVOCADO SECTION (IN THE HTML FILE) 
+*/
+
+/*CHANGE LINKS*/
+a 
+{
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  font-size: 30px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: gray;
+}
+
+a:active {
+  box-shadow: none;
+}
+
+/*CHANGE FONT, COLOR*/
+body
+{
+	font-family: Impact;
+	color: darkred; 
+}
+
+
+
+
+#parentDiv
+{
+	width: 20%;
+	border-style: solid; 
+	float: left;
+	position: fixed; 
+	
+}
+
+.item
+{
+	margin-top: 5px; 
+	margin-bottom: 5px; 
+	margin-right: 5px; 
+	padding: 10px; 
+	border-style: double;
+	border-radius: 15px 50px 30px; 
+}
+
+.item p 
+{
+	padding: 10px;  
+}
+
+#infoDiv
+{
+	width: 75%; 
+	float: right;
+	border-style: solid;
+}
